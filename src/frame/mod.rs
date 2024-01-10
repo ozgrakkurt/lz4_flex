@@ -29,7 +29,7 @@ pub(crate) mod slice_decompress;
 pub use compress::{AutoFinishEncoder, FrameEncoder};
 pub use decompress::FrameDecoder;
 pub use header::{BlockMode, BlockSize, FrameInfo};
-pub use slice_decompress::SliceFrameDecode;
+pub use slice_decompress::FrameDecompressor;
 
 #[derive(Debug)]
 #[non_exhaustive]
