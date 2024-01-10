@@ -24,10 +24,12 @@ pub(crate) mod compress;
 #[cfg_attr(feature = "safe-decode", forbid(unsafe_code))]
 pub(crate) mod decompress;
 pub(crate) mod header;
+pub(crate) mod slice_decompress;
 
 pub use compress::{AutoFinishEncoder, FrameEncoder};
 pub use decompress::FrameDecoder;
 pub use header::{BlockMode, BlockSize, FrameInfo};
+pub use slice_decompress::SliceFrameDecode;
 
 #[derive(Debug)]
 #[non_exhaustive]
